@@ -25,4 +25,4 @@ The website's code has no license selected yet. Please choose an explicit reposi
 
 ## Application source
 
-The runnable **SINA Prototype 1** research prototype is available under [`prototype/`](./prototype/). This is the public name for the application whose technical code lineage is **SINA Fresh 0.2.1**. The code includes synthetic demo measurements, software checks, and human-reviewed incident workflows; it is **not** a field-certified leak detector. Personal SQLite files and local Python environments are not published. See [prototype README](./prototype/README.md).
+The runnable **SINA Prototype 1** research prototype is available under [`prototype/`](./prototype/). The code includes synthetic demo measurements, software checks, and human-reviewed incident workflows; it is **not** a field-certified leak detector. Personal SQLite files and local Python environments are not published. See [prototype README](./prototype/README.md).
