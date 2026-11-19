@@ -1,0 +1,20 @@
+@echo off
+setlocal
+cd /d "%~dp0"
+if not exist ".venv\Scripts\python.exe" (
+    py -3.10 -m venv .venv
+    if errorlevel 1 (
+        echo Python 3.10 not available. Install Python 3.10 or change version in this script.
+        pause
+        exit /b 1
+    )
+    ".venv\Scripts\python.exe" -m pip install --upgrade pip
+    ".venv\Scripts\python.exe" -m pip install -r requirements.txt
+    if errorlevel 1 (
+        echo Package installation failed. See error above.
+        pause
+        exit /b 1
+    )
+)
+".venv\Scripts\python.exe" -m streamlit run app.py --server.address 127.0.0.1 --server.port 8501 --browser.gatherUsageStats false
+pause

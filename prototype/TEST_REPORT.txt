@@ -1,0 +1,33 @@
+SINA Fresh 0.2.1 - actual engineering test record
+Date: 2026-11-18
+Project origin: SINA_FRESH_0_2_LIVE_EVENTS_VERIFIED_DATA.zip
+Test command: python -m pytest -q
+RESULT: 33 passed in 5.54s (latest full run)
+
+23 tests from original Fresh 0.2 passed unchanged.
+10 new tests cover:
+ - UTC Plotly event marker uses ISO timestamps, not integer milliseconds
+ - equivalent instants across different timezone offsets
+ - persisted operator review and append-only audit survive SQLite reopen
+ - 5-stage flow from parsed synthetic sample to review and candidate export
+ - gateway reporting: fresh, stale, disconnected, reconnecting
+ - injected fake serial transport: failed connection, retry, valid/malformed packets
+ - synthetic replay cannot enter real training-candidate export
+ - synthetic live sensor-shaped feed into analysis/review with stable event ID
+ - optional SQLite migration preserves old DBs and forbids overwrite
+ - migration refuses same-folder operation
+
+ALSO EXECUTED:
+ - python -m compileall -q app.py live_gateway.py sina (passed)
+ - CLI-based no-browser pipeline and existing HTTP loopback auth tests (included in pytest)
+
+NOT TESTED:
+ - Browser end-to-end Streamlit UI (Streamlit not available in this container)
+ - Real Arduino/USB serial transport, pump or valve control
+ - Field leak detection sensitivity/specificity; no labelled field validation
+ - Concurrent production workloads, multi-user roles or remote network ingress
+
+SCIENCE:
+All demo and serial mock measurements in tests are synthetic software fixtures,
+NOT empirical field measurements. Operator-reported verification is an unverified
+assertion. No automatic retraining. Previous SINA 0.2 remains intact.

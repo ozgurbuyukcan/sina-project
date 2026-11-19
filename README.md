@@ -2,7 +2,7 @@
 
 Public, static **project showcase** for SINA Prototype 1 and the Xylem Global Student Innovation Challenge 2026.
 
-**This repository contains only the website, not the private/local SINA application code or sensor database.**
+**This repository contains both the public website and the runnable SINA Prototype 1 application source in `prototype/`. Private/local sensor databases are NOT included.**
 
 ## What is included
 - A responsive GitHub Pages presentation of the **SCAN → IDENTIFY → NAVIGATE → ASSESS** workflow and **LEARNING DATA** research loop.
@@ -22,3 +22,7 @@ The archived sensor source is ©/licensed as specified by its authors (dataset p
 SINA is a *research-stage operator decision-support prototype*, not a field-certified leak detector. A measured fluctuation or anomaly score is not proof of a leak. Historical controlled-leak comparison results are not claimed as Prototype 1 metrics.
 
 The website's code has no license selected yet. Please choose an explicit repository license if you wish to grant reuse rights.
+
+## Application source
+
+The runnable **SINA Prototype 1** research prototype is available under [`prototype/`](./prototype/). This is the public name for the application whose technical code lineage is **SINA Fresh 0.2.1**. The code includes synthetic demo measurements, software checks, and human-reviewed incident workflows; it is **not** a field-certified leak detector. Personal SQLite files and local Python environments are not published. See [prototype README](./prototype/README.md).

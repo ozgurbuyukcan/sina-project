@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+user_data/*.sqlite3
+user_data/*.sqlite3-journal
+
+user_data/*.sqlite3-*
+user_data/*.sqlite3-wal
+user_data/*.sqlite3-shm
+
+# SINA Prototype 1 — public source repository exclusions
+user_data/
+demo_output/
+*.sqlite
+*.db
+.env
+.env.*
+*.pem
+*.key
+*.log
+*.zip
+.DS_Store

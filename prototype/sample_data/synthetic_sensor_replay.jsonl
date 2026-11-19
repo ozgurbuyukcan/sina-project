@@ -1,0 +1,5 @@
+# OFFLINE DEMO ONLY. These are simulated measurements, NOT a real Arduino or leak test.
+{"timestamp":"2026-11-18T09:00:00Z","line_id":"LINE-1","flow_lpm":12.0,"pressure_bar":0.40}
+{"timestamp":"2026-11-18T09:00:01Z","line_id":"LINE-1","flow_lpm":12.2,"pressure_bar":0.41}
+{"timestamp":"2026-11-18T09:00:02Z","line_id":"LINE-1","flow_lpm":11.9,"pressure_bar":0.40}
+{"timestamp":"2026-11-18T09:00:03Z","line_id":"LINE-1","flow_lpm":12.1,"pressure_bar":0.39}

@@ -1,0 +1,31 @@
+SINA Fresh 0.2 -- engineering verification
+
+Date: 2026-11-18
+Entrypoint: python -m streamlit run app.py
+
+Executed:
+  python -m pytest -q
+  23 passed
+  python -m py_compile app.py live_gateway.py launch_local_http.py sina/*.py
+  success
+
+Integration checks include:
+- v0.1 regression tests (14 previous tests)
+- Serial packet parse (JSONL/CSV), UTC gateway timestamping, nonfinite/bad input reject
+- Source ID registry prevents mixing offline replay and serial
+- SQLite insert / idempotent duplicate / conflicting duplicate reject / error logging
+- Stable live event identifiers after adding new readings
+- Measured-source review evidence, closed status and eligibility gating
+- Synthetic demo and unverified labels excluded from training-candidate export
+- Event review context immutable after first snapshot
+- Real loopback HTTP process: unauthorized 401, authorized POST 201, duplicate POST 200
+- Offline replay CLI smoke: 4 inserted; source labeled OFFLINE_REPLAY
+
+Not performed:
+- Physical Arduino serial data collection (device unavailable)
+- End-to-end Streamlit browser UI verification. Streamlit could not be installed in
+  the current sandbox because external pip package registry DNS access failed.
+- Physical leak detection accuracy testing; no claims of leak validation.
+
+Caveat: client/device clocks, hardware calibration and secured multi-user deployment
+require independent validation before production use.
