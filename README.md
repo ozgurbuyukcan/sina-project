@@ -1,6 +1,6 @@
 # SINA — Hydraulic Monitoring & Decision Support
 
-Public, static **project showcase** for SINA Fresh 0.2.1 and the Xylem Global Student Innovation Challenge 2026.
+Public, static **project showcase** for SINA Prototype 1 and the Xylem Global Student Innovation Challenge 2026.
 
 **This repository contains only the website, not the private/local SINA application code or sensor database.**
 
@@ -19,6 +19,6 @@ Go to repository **Settings → Pages → Build and deployment → Deploy from a
 ## Research and attribution
 The archived sensor source is ©/licensed as specified by its authors (dataset page indicates **CC0 1.0**). Local scored exports were used to create an original graph, but no private source rows, local credentials, or SQLite records are included in this website.
 
-SINA is a *research-stage operator decision-support prototype*, not a field-certified leak detector. A measured fluctuation or anomaly score is not proof of a leak. Historical controlled-leak comparison results are not claimed as Fresh 0.2.1 metrics.
+SINA is a *research-stage operator decision-support prototype*, not a field-certified leak detector. A measured fluctuation or anomaly score is not proof of a leak. Historical controlled-leak comparison results are not claimed as Prototype 1 metrics.
 
 The website's code has no license selected yet. Please choose an explicit repository license if you wish to grant reuse rights.
