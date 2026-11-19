@@ -1,0 +1,10 @@
+# Do not upload private measurements, SQLite databases, tokens, environment files or internal models
+*.sqlite3
+*.db
+.env
+.env.*
+__pycache__/
+.venv/
+user_data/
+private/
+*.log
